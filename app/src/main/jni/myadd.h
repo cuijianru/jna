@@ -19,7 +19,17 @@ struct User{
    char*  name;
    int age;
 };
+struct School
+{
 
+
+   char*  name;
+
+
+   int count;
+    User * users[100];
+
+ };
 
 //1，简单例子
 	int myadd(int x, int y);
@@ -33,8 +43,13 @@ void setuser( User * user1);
 void setUserName(char * name);
 User*  getuser();
 
+//3复杂结构体
+void setSchool(School * school0);
+School * getSchool();
 
 
+//4c调java代码
+int addxy(int (*fp)(int left,int right),int left,int right);
 #ifdef __cplusplus
 };
 #endif

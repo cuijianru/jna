@@ -8,7 +8,7 @@
 //简单例子
 
 User *user=new User();
-
+School * school =new School();
 int myadd(int x, int y)
 {
 return x+y;
@@ -33,6 +33,26 @@ user->name=name;
 
 User* getuser()
 {
-
 return user;
+}
+
+
+
+
+
+
+void setSchool(School * school0)
+{
+school=school0;
+}
+School * getSchool()
+{
+return school;
+}
+
+
+int addxy(int (*fp)(int left,int right),int left,int right){
+
+   return fp(left,right);
+
 }

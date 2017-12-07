@@ -21,11 +21,11 @@ public interface LUserLib extends Library {
         }
 public  User()
 {
-    super();
+   // super();
 }
 public User(String name,int age)
 {
-    super();
+   // super();
     this.name=name;
     this.age=age;
 }
