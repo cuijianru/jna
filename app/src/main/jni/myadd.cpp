@@ -4,11 +4,11 @@
 
 #include<myadd.h>
 #include<string.h>
-//int getname(User *user)
-//{
-//printf("cuijianru");
-//return user->age;
-//}
+
+//简单例子
+
+User *user=new User();
+
 int myadd(int x, int y)
 {
 return x+y;
@@ -16,4 +16,23 @@ return x+y;
  char * myString()
 {
 return "这是从c文件中返回的字符串";
+}
+
+
+
+
+
+void setuser(User * user1)
+{
+user=user1;
+}
+void setUserName(char * name)
+{
+user->name=name;
+}
+
+User* getuser()
+{
+
+return user;
 }
